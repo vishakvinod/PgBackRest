@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag vishakvinod/pgbackrest:v0.0.1
     - name: Publish the Docker image
-      run: docker publish vishakvinod/pgbackrest:v0.0.1
+      run: docker push vishakvinod/pgbackrest:v0.0.1
