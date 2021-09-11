@@ -9,18 +9,21 @@ To achieve the following we have used the following:
 ###Version
 * Postgres : 12.8-1
 
-##Volumes:
+### Volumes:
 * postgres : /var/lib/postgresql/data
 * backup : /var/lib/pgbackrest
 
-##Configuration file:
+### Configuration file:
 * backup : data/pgbackrest.conf
 * postgres: data/postgresql.conf
 * supervisor: data/supervisord.conf
 
-## Exposed endpoint:
+### Exposed endpoint:
 * Flask Endpoint : _http://localhost:5000_
 * Supervisor dashboard: _http://localhost:9001_
+
+### Environment variables:
+* 
 
 ## Api's Exposed for managing pgBackRest:
 
