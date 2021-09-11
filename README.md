@@ -2,6 +2,7 @@
 
 Custom docker image of a postgres db to enable continuous backup and restore of database.<br/>
 To achieve the following we have used the following:
+* [postgres](https://github.com/docker-library/postgres): Docker image for postgres. The Dockerfile used here is based on the official postgres docker image with some modifications to configure backup and restore.
 * [pgBackRest](https://pgbackrest.org/): For continuous backup and restore of the database
 * Python: To run a cron job of creating regular backups and a flask server to manager the pgBackRest backups
 * [Supervisor](http://supervisord.org/): Monitor and control python and postgres db. 
@@ -23,7 +24,7 @@ To achieve the following we have used the following:
 * Supervisor dashboard: _http://localhost:9001_
 
 ### Environment variables:
-* 
+* All the environment variables available on the postgres image are applicable here. [refer](https://hub.docker.com/_/postgres)
 
 ## Api's Exposed for managing pgBackRest:
 
