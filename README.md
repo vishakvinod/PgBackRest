@@ -1,4 +1,4 @@
-# GearSorting App- Postgres DB
+# Backup and Restore- Postgres DB
 
 Custom docker image of a postgres db to enable continuous backup and restore of database.<br/>
 To achieve the following we have used the following:
